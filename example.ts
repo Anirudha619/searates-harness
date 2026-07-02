@@ -7,8 +7,8 @@ const source: DataSource = new SearatesScraperSource();
 // Later (will need to implement the api class function): const source: DataSource = new SearatesApiSource(process.env.SEARATES_API_KEY!);
 
 const Input:FetchInput = {
-  origin: "Chennai",
-  destination: "Shanghai",
+  origin: "mumbai",
+  destination: "Qingdao",
   dispatchDate: "2026-07-17",
   containerType: "20' Standard",
 } 

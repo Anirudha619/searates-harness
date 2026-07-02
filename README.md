@@ -54,8 +54,8 @@ const source: DataSource = new SearatesScraperSource();
 // Later (will need to implement the api class function): const source: DataSource = new SearatesApiSource(process.env.SEARATES_API_KEY!);
 
 const Input:FetchInput = {
-  origin: "Chennai",
-  destination: "Shanghai",
+  origin: "mumbai",
+  destination: "Qingdao",
   dispatchDate: "2026-07-17",
   containerType: "20' Standard",
 } 
@@ -117,8 +117,10 @@ test/
 
 **Selector centralization**: All DOM selectors live in `src/selectors.ts`. When SeaRates changes their markup, a future engineer fixes everything in that one file.
 
-**Fuzzy input normalization**: Ports and container types are matched via `fast-fuzzy` — `20`, `20ft`, `20 standard`, `ST20` all resolve to the same container type. Ports accept names ("Nhava Sheva") or UN/LOCODES ("INNSA").
+**Input normalization**:
+Container type normalization: Clean up the input string, pull out the container size (20/40/etc) and family keyword (HC, OT, standard, etc), then look up that size-family combo against a pre-built index of known container types. Returns undefined if no size is found or no matching type exists.
 
+Port normalization: Try to match a UN/LOCODE pattern first, then fall back to an exact name match, then a fuzzy name match if neither works. Returns undefined if nothing clears the fuzzy-match threshold.
 ## Known Limitations
 
 - **Manual SeaRates login required** — you must log into searates.com in your Chrome profile before running. Auto-login was kept out of scope but is straightforward to add.
@@ -126,4 +128,3 @@ test/
 - No caching — every call hits SeaRates
 
 ---
-
