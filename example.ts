@@ -8,8 +8,8 @@ const source: DataSource = new SearatesScraperSource();
 
 const Input:FetchInput = {
   origin: "mumbai",
-  destination: "Qingdao",
-  dispatchDate: "2026-07-17",
+  destination: "Shanghai",
+  dispatchDate: "2026-07-5",
   containerType: "20' Standard",
 } 
 

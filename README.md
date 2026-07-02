@@ -55,8 +55,8 @@ const source: DataSource = new SearatesScraperSource();
 
 const Input:FetchInput = {
   origin: "mumbai",
-  destination: "Qingdao",
-  dispatchDate: "2026-07-17",
+  destination: "Shanghai",
+  dispatchDate: "2026-07-5",
   containerType: "20' Standard",
 } 
 
@@ -121,6 +121,7 @@ test/
 Container type normalization: Clean up the input string, pull out the container size (20/40/etc) and family keyword (HC, OT, standard, etc), then look up that size-family combo against a pre-built index of known container types. Returns undefined if no size is found or no matching type exists.
 
 Port normalization: Try to match a UN/LOCODE pattern first, then fall back to an exact name match, then a fuzzy name match if neither works. Returns undefined if nothing clears the fuzzy-match threshold.
+
 ## Known Limitations
 
 - **Manual SeaRates login required** — you must log into searates.com in your Chrome profile before running. Auto-login was kept out of scope but is straightforward to add.
