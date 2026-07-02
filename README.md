@@ -6,6 +6,8 @@ Retrieve freight rates from SeaRates with a swappable data source.
 > schedules + rates**. This is **TypeScript**, and only **rates** are
 > implemented (no schedules).
 
+<img width="1060" height="449" alt="image" src="https://github.com/user-attachments/assets/f9fde9da-288c-4dcf-8a13-e2802a68e3db" />
+
 ---
 
 ## Prerequisites
@@ -70,6 +72,7 @@ getRates(source, Input).then((result) => {
 ```
 
 Inputs are normalized automatically — ports accept names or UN/LOCODES (INNSA, NLRTM), container types accept `20`, `20ft`, `ST20`, `20 standard`, etc.
+
 
 ### Swappable Data Source
 
