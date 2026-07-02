@@ -37,6 +37,9 @@ npx playwright install chromium
 
 ## Run the Example
 
+> [!WARNING]
+> Make sure Chrome is **closed** before running the script (the script will not work if Chrome is already open).
+
 ```bash
 npx tsx example.ts
 ```
