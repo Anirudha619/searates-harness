@@ -10,6 +10,9 @@ Retrieve freight rates from SeaRates with a swappable data source.
 
 ---
 
+## Video demo:
+https://drive.google.com/drive/folders/1Bl74eAbDInRSSl__VL7aT1THxxyiJSiZ?usp=sharing
+
 ## Prerequisites
 
 1. **Install Chrome** if you don't have it already.
