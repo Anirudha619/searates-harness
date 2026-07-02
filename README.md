@@ -78,7 +78,7 @@ getRates(source, Input).then((result) => {
 ```
 
 Inputs are normalized automatically — ports accept names or UN/LOCODES (INNSA, NLRTM), container types accept `20`, `20ft`, `ST20`, `20 standard`, etc.
-
+the port reference only includes origin ports from **India**, **China**, and the **US**.
 
 ### Swappable Data Source
 
@@ -134,6 +134,7 @@ Port normalization: Try to match a UN/LOCODE pattern first, then fall back to an
 ## Known Limitations
 
 - **Manual SeaRates login required** — you must log into searates.com in your Chrome profile before running. Auto-login was kept out of scope but is straightforward to add.
+- **Port scope** — the port reference only includes origin ports from **India**, **China**, and the **US**. Other regions were intentionally excluded. they can easily be added.
 - Only FCL container types are supported
 - No caching — every call hits SeaRates
 

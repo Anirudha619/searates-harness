@@ -106,8 +106,67 @@ const ports: Port[] = [
     name: 'Tianjin',
     unlocode: 'CNTSN',
     countryCode: 'CN'
+  },
+  {
+    id: 'P_13782',
+    name: 'Chicago',
+    unlocode: 'USCHI',
+    countryCode: 'US'
+  },
+  {
+    id: 'P_15332',
+    name: 'Houston',
+    unlocode: 'USHOU',
+    countryCode: 'US'
+  },
+  {
+    id: 'P_16959',
+    name: 'New York',
+    unlocode: 'USNYC',
+    countryCode: 'US'
+  },
+  {
+    id: 'P_16252',
+    name: 'Memphis',
+    unlocode: 'USMEM',
+    countryCode: 'US'
+  },
+  {
+    id: 'P_15786',
+    name: 'Los Angeles',
+    unlocode: 'USLAX',
+    countryCode: 'US'
+  },
+  {
+    id: 'P_15873',
+    name: 'Long Beach',
+    unlocode: 'USLGB',
+    countryCode: 'US'
+  },
+  {
+    id: 'P_14337',
+    name: 'Detroit',
+    unlocode: 'USDET',
+    countryCode: 'US'
+  },
+  {
+    id: 'P_15672',
+    name: 'Kansas City',
+    unlocode: 'USMKC',
+    countryCode: 'US'
+  },
+  {
+    id: 'P_14162',
+    name: 'Dallas',
+    unlocode: 'USDAL',
+    countryCode: 'US'
+  },
+  {
+    id: 'P_13678',
+    name: 'Columbus',
+    unlocode: 'USCMH',
+    countryCode: 'US'
   }
 ]
-
 
 export default ports;
